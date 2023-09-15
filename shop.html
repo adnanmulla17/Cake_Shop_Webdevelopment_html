@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="shop.js"></script>
+	<style>
+        #shop{
+            width: 100%;
+            height: 100%;
+        }
+
+        #upper{
+            width: 100%;
+            height: 130px;
+            background-color: #523A28;
+            border: 1px solid darkviolet;
+        }
+
+        #name, #home ,#OurProducts , #Aboutus ,#Ourhistory, #blogs{
+            display: inline-block;   
+        }
+
+        #name{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: aliceblue;
+            font-size: 50px;
+            width: 30%;
+            text-align: center;
+            margin-top: 35px;      
+        }
+
+        #home{
+            color: aliceblue;
+            font-size: 20px;
+            width: 5%;
+            margin-left: 15%;
+            height: 60px;
+            text-decoration: underline;
+        }
+
+        #OurProducts{
+            color: aliceblue;
+            font-size: 20px;
+            width: 10%;
+            margin-left: 2%;
+            height: 60px;
+            text-decoration: underline;
+        }
+
+        #Aboutus{
+            color: aliceblue;
+            font-size: 20px;
+            width: 7%;
+            margin-left: 2%;
+            height: 60px;
+            text-decoration: underline;
+        }
+
+        #Ourhistory{
+            color: aliceblue;
+            font-size: 20px;
+            width: 9%;
+            margin-left: 2%;
+            height: 60px;
+            text-decoration: underline;
+        }
+
+        #blogs{
+            color: aliceblue;
+            font-size: 20px;
+            width: 10%;
+            margin-left: 2%;
+            height: 60px;
+            text-decoration: underline;
+        }
+
+        #middle{
+            width: 100%;
+            
+            background-color : #E4D4C8 ;
+            float: right;
+            margin-top: 1px;
+            margin: 1px;
+        }
+
+        #bottom{
+            width: 100%;
+            height: 30px;
+            margin: 1px;
+            margin-bottom: 1px;
+            text-align: center;
+            background-color: #6F4E37;
+            font-size: 20px;
+            padding: 3px;
+            
+        }
+
+        #order{
+            border: 1px solid black;
+            padding: 5px;
+            margin-top: 10%;
+
+        }
+
+        .product{
+            border: 1px solid black;
+             width: 19%; 
+             margin:  10px ; 
+             text-align:center;
+             padding: 2%;
+             float: left;
+             
+            
+        }
+
+       
+
+   
+
+   
+       
+
+    </style>
+</head>
+<body>
+  <div id="shop">
+    
+    <div id="upper">
+        <div id="name">Cakelicious </div>
+        <div id="home"><a href="#home2"  style="color:bisque">Home</a></div>
+        <div id="OurProducts"><a href="#ourproducts1"  style="color:bisque">Our Products</a></div>
+        <div id="Aboutus"><a href="#aboutus1"  style="color:bisque">About us</a></div>
+        <div id="blogs"><a href="#privacy1"  style="color:bisque">Privacy policy</a></div>
+        <div id="Ourhistory"><a href="#blogs1"  style="color:bisque">Blogs</a></div>
+    
+       
+    </div>
+
+    
+    
+    <div id="middle">
+        <div class="product" >
+            <img src="Black Forest cake.jpg" alt="Cake 1" width="200px"; height="200px">
+            <p>Black Forest Cake<br> Price: 300Rs</p>
+            <button onclick="addToCart('Black Forest cake')" >Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="Butterscotch cake with rasmalai.jpg" alt="Cake 2" width="200px"; height="200px">
+            <p>Butterscotch cake with Rasmalai<br> Price: 450Rs</p>
+            <button onclick="addToCart('Butterscotch cake with rasmalai')" >Add to Cart</button>
+          </div>
+          <div class="product" >
+            <img src="Butterscotch cream cake.jpg" alt="Cake 3" width="200px"; height="200px">
+            <p>Butterscotch Cream Cake<br> Price: 500Rs</p>
+            <button onclick="addToCart('Butterscotch cream cake')">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="Chocolate Caramel fudge.jpg" alt="Cake 4" width="200px"; height="200px">
+            <p>Chocolate Caramel Fudge<br> Price: 650Rs</p>
+            <button onclick="addToCart('Chocolate Caramel fudge')" >Add to Cart</button>
+          </div>
+          <div class="product" >
+            <img src="Chocolatey truffle cake.jpg" alt="Cake 5" width="200px"; height="200px">
+            <p>Chocolatey Truffle Cake<br> Price: 300Rs</p>
+            <button onclick="addToCart('Chocolatey truffle cake')">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="fruit overloaded.jpg" alt="Cake 6" width="200px"; height="200px">
+            <p>Fruit Overloaded<br> Price: 400Rs</p>
+            <button onclick="addToCart('Fruit Overloaded')" >Add to Cart</button>
+          </div>
+          <div class="product" >
+            <img src="Fudge Brownie.jpg" alt="Cake 7" width="200px"; height="200px">
+            <p>Fudge Brownie<br> Price: 550Rs</p>
+            <button onclick="addToCart('Fudge Brownie')">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="Pineapple cake.jpg" alt="Cake 8" width="200px"; height="200px">
+            <p>Pineapple Cake<br> Price: 300Rs</p>
+            <button onclick="addToCart('Pineapple cake')" >Add to Cart</button>
+          </div>
+
+         
+          <div class="product" >
+            <img src="Red Velevet Fresh Cream Cake.jpg" alt="Cake 9" width="200px"; height="200px">
+            <p>Red Velevet Fresh Cream Cake<br> Price: 250Rs</p>
+            <button onclick="addToCart('Red Velevet Fresh Cream Cake')">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="rose paradise.jpg" alt="Cake 10" width="200px"; height="200px">
+            <p>Rose Paradise<br> Price: 550Rs</p>
+            <button onclick="addToCart('Rose Paradise')" >Add to Cart</button>
+          </div>
+          <div class="product" >
+            <img src="White Cream Forest.jpg" alt="Cake 11" width="200px"; height="200px">
+            <p>White Cream Forest<br> Price: 550Rs</p>
+            <button onclick="addToCart('Cake 11')">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="Princess Theme Strawberry Cake.jpg" alt="Cake 12" width="200px"; height="200px">
+            <p>Princess Theme Strawberry Cake<br> Price: 450Rs</p>
+            <button onclick="addToCart('Cake 12')" >Add to Cart</button>
+
+          </div>
+
+
+
+          <div style="margin: 20px; ">
+
+          <div style="width: 30%; float:left">
+            <p id="home2" style="color: black; font-size:30px; text-decoration: underline;color:#523A28">Home</p>
+            <p style="font-size: 20px; text-align:justify">Best Cake Shop in Pune
+              We have finest selection of premium cakes just for to create a memorable moment with your loved ones. Order cakes online with our online cake shop Coimbatore and send it to your friends, family and loved ones for their birthday, anniversary, celebrations, festivals, parties and more!</p>
+          </div>
+          <div style="width: 30%; float:left; margin-left: 50px;" >
+            <p id="ourproducts1" style="color: black; font-size:30px; text-decoration: underline; color:#523A28"; >Our Products</p>
+            <p style="font-size: 20px;">
+              <li>Black Forest Cake</li>
+              <li>Butterscotch cake with Rasmalai</li>
+              <li>Chocolate Caramel fudge</li>
+              <li>Princess Theme Strawberry Cake</li>
+              <li>White Cream Forest</li>
+              <li>Rose Paradise</li>
+              <li>Fruit Overloaded</li>
+              <li>Chocolatey Truffle Cake</li>
+              <li>Fudge Brownie</li>
+            </p>
+          </div>
+          <div style="width: 30%; float:left;">
+            <p id="aboutus1" style="color: black; font-size:30px; text-decoration: underline; color:#523A28">About Us</p>
+            <P style="font-size: 20px; text-align:justify"> Since Winni’s inception in 2013, we have been successful in redefining the horizons of e-retailing cakes, and making online surfing for our customers much more handy. We bring you an exclusive range of cakes and doorstep delivery services so reliable, that you would not have to sweat about the order once it's placed.  From taking the baby steps to sprinting fast to become India’s one of the most trusted online portals for gifts and cakes. </P>
+          </div>
+          <div style="width: 55%; float:left;">
+            <p id="blogs1" style="color: black; font-size:30px; text-decoration: underline; color:#523A28">Blogs</p>
+            <p style="font-size: 20px; text-align:justify;">How Long A Cake Last In The Fridge?<br>
+From a Christmas dinner to a house-warming party, delicious servings of baked goods are always a cherry on the top of celebrations. But when all is said and done, you want to ensure the leftovers are preserved properly. When it comes to cakes, it is always a safe bet to put them in a refrigerator.<br>
+If you want to make sure how long can a cake last in the fridge, you are in the right place. Simply put, the period of these confectionaries remaining fresh in a fridge depends on the type of cake you’re storing. In general, these foods remain consumable for around 2-4 days after you have baked them. On the other hand, store-bought cakes can last up to a week or two in a refrigerator. <br>
+ Just make sure you use plastic wrap and tin foil to cover and seal them carefully. This way, these oven-made delicacies can retain their taste and texture in the cold atmosphere.</p>
+          </div>
+          <div style="width: 30%; float:left; margin-left:8%">
+            <p id="privacy1" style="color: black; font-size:30px;text-decoration: underline; color:#523A28">Privacy policy</p>
+            <p style="font-size: 20px; text-align:justify;">At Winni, we are extremely proud of our commitment to protect your privacy. We value your trust in us. We will work hard to earn your confidence so that you can enthusiastically use our services and recommend us to friends and family. Please read the following policy to understand how your personal information will be treated as you make full use of our Site.</p>
+          </div>
+
+
+        </div>
+
+          </div>
+
+          
+        
+  
+
+    
+
+    
+<marquee id="bottom" behavior="right" direction="">Gmail:cakelicious@gmail.com &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Contact number : 7709976768 / 9028088104 / 9373673121 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Address : Near Keystone School of Engineering, Hadapsar, Pune - 28</marquee>
+   
+    
+  </div>
+</body>
+</html>
